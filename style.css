@@ -1,0 +1,28 @@
+.nav{
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 200px;
+    position: relative;
+}
+ul{
+    margin-right: 30px;
+    color:aliceblue;
+    font: 20px bold;
+}
+.hero-sec{
+    background-image: url("images/hero.png");
+    flex-wrap:wrap;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    filter:saturate(1.1) brightness(70%)
+    contrast(1.1)
+    ;
+}
+.logo{
+    margin-left: 600px;
+    margin-top: 50pxs;
+    filter: brightness(150%) saturate(1) contrast(1);
+}
