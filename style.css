@@ -1,7 +1,6 @@
 .nav{
     width: 100%;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction:row-reverse;
     padding-right: 200px;
     position: relative;
 }
@@ -10,19 +9,112 @@ ul{
     color:aliceblue;
     font: 20px bold;
 }
+
 .hero-sec{
     background-image: url("images/hero.png");
     flex-wrap:wrap;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
     height: 400px;
-    filter:saturate(1.1) brightness(70%)
-    contrast(1.1)
-    ;
+    
+}
+.logo, .title {
+    filter: unset; 
 }
 .logo{
     margin-left: 600px;
-    margin-top: 50pxs;
+    margin-top: 10px;
+    align-self: center;
+    z-index: 2;
+}
+.title{
+   text-align: center;
+   margin-top: 10px;
+   margin-left: 550px;
+   z-index: 2;
+    font-size:50px;
+   color: white;
+}
+.logo img {
+    height: 70px;
+    width: 220px;
     filter: brightness(150%) saturate(1) contrast(1);
+}
+
+.title h1 {
+    font-size: large;
+    color: white;
+    filter: brightness(100%);
+}
+.search{
+    align-self: center;
+    margin-bottom: 80px;
+    margin-left: 500px;
+    display:flex;
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    color: white;
+}
+#search{
+    width: 430px;
+    border: none;
+}
+.main{
+    margin-top: 20px;
+    justify-content: center;
+     
+}
+.cards{
+    width: 300px;
+    margin-right: 70px;
+
+    border-bottom-left-radius: 10px 2px solid grey;
+    border-bottom-right-radius: 10px 2px solid wheat;
+}
+.cards img{
+    border:2px solid grey ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+.cards h2{
+    margin: 0px;
+}
+.cards p{
+    margin: 0px;
+}
+.cards:hover{
+    transform:scale(1.055);
+    transition: 0.3s linear;
+}
+.collections{
+    justify-content: center;
+}
+.collection{
+    width: 250px;
+    margin-right: 30px;
+
+    border-bottom-left-radius: 10px 2px solid grey;
+    border-bottom-right-radius: 10px 2px solid wheat;
+}
+.collection img{
+    border:2px solid grey ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    width: 250px;
+}
+footer img{
+    margin-top: 100px;
+    margin-left: 300px;
+    height:600px;
+    width:400px
+}
+.getapp h1{
+    margin-top: 200px;
+    color:red;
 }
